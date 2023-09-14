@@ -1,0 +1,15 @@
+read -p "p mau install apaa bang?" eaa
+
+if command -v "$eaa" &> /dev/null; then
+        echo "one file added"
+                else
+
+read -p  "$no one file. witch one file? [yes/no]" permision
+
+        case $permision in (y|Y|yes)
+        apt-get install $eaa -y
+;;
+        *)
+        echo "comand not found"
+;; esac
+fi
