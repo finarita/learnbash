@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for i in {1..50}; do
+
+#Directory
+        namedir="Directory$i"
+        mkdir -p "$namedir"
+for a in {1..50}; do
+
+#Filee
+        filename="$namedir/file$a.txt"
+        echo -e "Halo saya adalah file ke$a\nSaya dibuat pada:$(date)" > "$file>
+        echo "DONE!! $filename telah dibuat"
+done
+done
